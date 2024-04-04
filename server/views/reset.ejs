@@ -1,0 +1,58 @@
+<%-include("../EJS/upper.ejs")%>
+<style>
+    #parent{
+        height:100vh;
+        width:100vw;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    input[type=password]{
+     outline:none;
+     padding:10px;
+     background-color:rgb(255, 255, 255);
+     width:200px;
+     border:1px solid rgb(136, 129, 129);
+     border-radius:5px;
+    }
+
+    #btn{
+        padding:10px;
+        background-color:rgb(77, 80, 238);
+        width:224px;
+        cursor:pointer;
+        color:white;
+        font-size:larger;
+        border:1px solid white;
+        border-radius:5px;
+    }
+
+    #child{
+        height:100%;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #btn:active{
+        background-color: white;
+        color:rgb(77, 80, 238);
+        transition-duration: 0.3s;
+        border:1px solid black;
+    }
+
+</style>
+<div id="parent">
+    <div id="child">
+    <h1>Enter New Password</h1>
+        <form id="form" action="" method="post">
+         <div style="display:flex;flex-direction:column;gap:10px">
+         <div><input required name='password' type="password"/></div>
+         <button id="btn" value="submit">submit</button>
+         </div>
+        </form>
+    </div>
+</div>
+<%-include("../EJS/lower.ejs")%>
