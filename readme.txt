@@ -1,7 +1,7 @@
 In Track Directory
 
 add .env file with variables:-
-REACT_APP_URL='<--server url-->'
+REACT_APP_URL=<--server url-->
 
 In Server Directory 
 
